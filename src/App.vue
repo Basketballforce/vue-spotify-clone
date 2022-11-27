@@ -7,6 +7,7 @@ import LargeCardVue from "./components/LargeCard.vue";
 import FriendActiveVue from "./components/FriendActive.vue";
 import SquareCardVue from "./components/SquareCard.vue";
 import CategoryTitleVue from "./components/CategoryTitle.vue";
+import FriendHeaderVue from "./components/FriendHeader.vue";
 </script>
 
 <template>
@@ -19,7 +20,7 @@ import CategoryTitleVue from "./components/CategoryTitle.vue";
     <div class="mid-grid">
 
       <FixedMenuVue username="BasketballForce" />
-      <h1 class="greeting">Good Afternoon</h1>
+      <h1 class="greeting">Good <span id="time">Afternoon</span></h1>
 
       <div class="large-card-contain">
         <LargeCardVue playlist="Liked Songs" image="heart.svg" class="bg-purp-white" />
@@ -65,7 +66,11 @@ import CategoryTitleVue from "./components/CategoryTitle.vue";
     </div>
 
     <div class="right-grid">
+      <FriendHeaderVue/>
       <FriendActiveVue profilepic="overcome.jpg" username="Bear Grylls" song="Survive" album="Overcome" artist="BearG"/>
+      <FriendActiveVue profilepic="overcome.jpg" username="Bear Grylls" song="Survive" album="Overcome" artist="BearG"/>
+      <FriendActiveVue profilepic="overcome.jpg" username="Bear Grylls" song="Survive" album="Overcome" artist="BearG"/>
+
     </div>
 
   </div>
@@ -104,9 +109,11 @@ import CategoryTitleVue from "./components/CategoryTitle.vue";
   background-color: rgb(20, 20, 20);
 }
 
-.greeting {
+.greeting, #time {
   font-size: 1.75rem;
   color: white;
+}
+.greeting{
   margin-left: 2rem;
 }
 
@@ -143,3 +150,21 @@ import CategoryTitleVue from "./components/CategoryTitle.vue";
 }
 
 </style>
+
+<script>
+window.addEventListener('load', function () {
+  var d = new Date();
+var time = d.getHours();
+var greeting = document.getElementById("time");
+
+if (time >= 6 && time < 12 ) {
+  greeting.innerText="Morning"
+}
+if (time >= 12 && time < 18) {
+  greeting.innerText="Afternoon"
+}
+if (time >=18 || time < 6 ) {
+  greeting.innerText="Evening";
+}
+})
+</script>

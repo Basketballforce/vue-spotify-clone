@@ -76,7 +76,6 @@ img{
 }
 
 h1{
-    margin-left: 1rem;
     margin-right: 1rem;
     margin-top: .75rem;
     color: white;
@@ -117,7 +116,6 @@ h1{
 }
 
 p{
-    margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 0.25rem;
     font-size: 0.74rem;
