@@ -66,4 +66,12 @@ import LeftMenuPlaylistVue from './LeftMenuPlaylist.vue';
     height: 29rem;
 }
 
+.playlist::-webkit-scrollbar {
+  width: .5em;
+}
+ 
+.playlist::-webkit-scrollbar-thumb {
+  background-color: rgb(44, 44, 44);
+}
+
 </style>

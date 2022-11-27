@@ -40,6 +40,26 @@ import CategoryTitleVue from "./components/CategoryTitle.vue";
       <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
       <SquareCardVue playlist="Spongebob Ukulele Music" image="spongeuke.jfif" artists_or_description="you've been wanting to hear the full version of that one ukulele song from Spongebob? Well, (hopefully), you're in luck."/>
       </div>
+
+      <CategoryTitleVue category="Recently Played"/>
+      <div class="square-card-contain">
+      <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
+      <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
+      <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
+      <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
+      <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
+      <SquareCardVue playlist="Spongebob Ukulele Music" image="spongeuke.jfif" artists_or_description="you've been wanting to hear the full version of that one ukulele song from Spongebob? Well, (hopefully), you're in luck."/>
+      </div>
+
+      <CategoryTitleVue category="Recently Played"/>
+      <div class="square-card-contain">
+      <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
+      <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
+      <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
+      <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
+      <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
+      <SquareCardVue playlist="Spongebob Ukulele Music" image="spongeuke.jfif" artists_or_description="you've been wanting to hear the full version of that one ukulele song from Spongebob? Well, (hopefully), you're in luck."/>
+      </div>
       
 
     </div>
@@ -49,7 +69,7 @@ import CategoryTitleVue from "./components/CategoryTitle.vue";
     </div>
 
   </div>
-  <div class="player"></div>
+  <div class="player">f</div>
 </template>
 
 <style scoped>
@@ -62,22 +82,22 @@ import CategoryTitleVue from "./components/CategoryTitle.vue";
   display: grid;
   grid-template-columns: 1fr 5fr 1.25fr;
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 
-.left-grid,
-.mid-grid,
-.right-grid {
+.left-grid,.mid-grid,.right-grid {
   display: inline-grid;
   background-color: red;
   grid-auto-rows: min-content;
   width: 100%;
-  height: 100%;
+  height: 90vh !important;
 }
 
 .mid-grid {
   background: rgb(4,9,61);
-  background: linear-gradient(180deg, rgba(4,9,61,1) 8%, rgb(2, 2, 29) 27%, rgb(12, 12, 12) 59%);
+  background: linear-gradient(180deg, rgba(4,9,61,1) 8%, rgb(2, 2, 29) 27%, rgb(16, 16, 16) 59%);
+  overflow-y: scroll;
+  max-height: 100%;
 }
 
 .right-grid {
@@ -97,7 +117,12 @@ import CategoryTitleVue from "./components/CategoryTitle.vue";
 }
 
 .player{
-  border-top: solid 1px rgb(48, 48, 48);
+  border-top: solid 2px rgb(48, 48, 48);
+  height: 10%;
+  position: fixed;
+  width: 100%;
+  top: 90%;
+  background: #1a1a1a4a;
 }
 
 .square-card-contain{
@@ -106,6 +131,15 @@ import CategoryTitleVue from "./components/CategoryTitle.vue";
   margin-left: 1rem;
   max-width: 100%;
   overflow-y: hidden;
+  margin-bottom: 1rem;
+}
+
+.square-card-contain::-webkit-scrollbar, .mid-grid::-webkit-scrollbar {
+  width: .7em;
+}
+ 
+.square-card-contain::-webkit-scrollbar-thumb, .mid-grid::-webkit-scrollbar-thumb {
+  background-color: rgb(44, 44, 44);
 }
 
 </style>
