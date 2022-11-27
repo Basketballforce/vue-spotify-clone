@@ -91,6 +91,17 @@ background: linear-gradient(133deg, rgba(50,22,149,1) 10%, rgba(84,53,207,1) 47%
   padding-left: 0.8rem;
   padding-right: 0.6rem;
   display: none;
+  transition: .15s;
+}
+
+.play-icon:hover{
+  transform: scale(1.1);
+  transition: 0.15s;
+  background: rgb(38, 201, 38);
+}
+
+.play-icon:active{
+  background: rgb(25, 141, 25);
 }
 
 </style>

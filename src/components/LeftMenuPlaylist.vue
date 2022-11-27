@@ -26,6 +26,7 @@ P{
     overflow-x: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 p:hover{

@@ -34,6 +34,8 @@ import LeftMenuPlaylistVue from './LeftMenuPlaylist.vue';
         <LeftMenuPlaylistVue playlist="2000s Heartache"/>
         <LeftMenuPlaylistVue playlist="Workout Pump"/>
         <LeftMenuPlaylistVue playlist="Xylephone Heartland Humdingers"/>
+        <LeftMenuPlaylistVue playlist="Hip Hop Hula-Hoop"/>
+        <LeftMenuPlaylistVue playlist="Jazzercise Jams"/>
     </div>
 
   </div>
@@ -61,7 +63,7 @@ import LeftMenuPlaylistVue from './LeftMenuPlaylist.vue';
 
 .playlist{
     overflow-y: auto;
-    height: 28rem;
+    height: 29rem;
 }
 
 </style>
