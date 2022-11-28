@@ -51,6 +51,7 @@ function getimage() {
 .square-card:hover > div > .play-icon {
   display: inline;
   position: absolute;
+  animation: play-slide-in 0.4s;
   /* Appear animation/ slide up */
 }
 
@@ -125,4 +126,14 @@ p {
   font-family: arial;
   font-weight: 500;
 }
+
+@keyframes play-slide-in {
+  0%{
+    top: 7.5rem;
+  }
+  100%{
+    top: 6.5rem;
+  }
+}
+
 </style>

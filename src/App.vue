@@ -35,14 +35,14 @@ import FriendHeaderVue from "./components/FriendHeader.vue";
       <CategoryTitleVue category="Recently Played"/>
       <div class="square-card-contain">
       <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
-      <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
-      <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
+      <SquareCardVue playlist="The Backseat Lovers Mix" image="backlovers.jfif" artists_or_description="The Backseat Lovers, Foals, The Bravery, Wilderado and more"/>
+      <SquareCardVue playlist="Hybrid Theory" image="hybridtheory.jfif" artists_or_description="Linkin Park"/>
       <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
       <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
       <SquareCardVue playlist="Spongebob Ukulele Music" image="spongeuke.jfif" artists_or_description="you've been wanting to hear the full version of that one ukulele song from Spongebob? Well, (hopefully), you're in luck."/>
       </div>
 
-      <CategoryTitleVue category="Recently Played"/>
+      <CategoryTitleVue category="Jump Back In"/>
       <div class="square-card-contain">
       <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
       <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
@@ -52,7 +52,7 @@ import FriendHeaderVue from "./components/FriendHeader.vue";
       <SquareCardVue playlist="Spongebob Ukulele Music" image="spongeuke.jfif" artists_or_description="you've been wanting to hear the full version of that one ukulele song from Spongebob? Well, (hopefully), you're in luck."/>
       </div>
 
-      <CategoryTitleVue category="Recently Played"/>
+      <CategoryTitleVue category="Your Top Mixes"/>
       <div class="square-card-contain">
       <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
       <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
@@ -62,6 +62,15 @@ import FriendHeaderVue from "./components/FriendHeader.vue";
       <SquareCardVue playlist="Spongebob Ukulele Music" image="spongeuke.jfif" artists_or_description="you've been wanting to hear the full version of that one ukulele song from Spongebob? Well, (hopefully), you're in luck."/>
       </div>
       
+      <CategoryTitleVue category="Made For BasketballForce"/>
+      <div class="square-card-contain">
+      <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
+      <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
+      <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
+      <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
+      <SquareCardVue playlist="Pokemon Lofi 🌸" image="pokemonLofi.jfif" artists_or_description="Best Pokemon Lofi hip hop mix - Chill beats to study, sleep, relax, chill to"/>
+      <SquareCardVue playlist="Spongebob Ukulele Music" image="spongeuke.jfif" artists_or_description="you've been wanting to hear the full version of that one ukulele song from Spongebob? Well, (hopefully), you're in luck."/>
+      </div>
 
     </div>
 
@@ -89,6 +98,11 @@ import FriendHeaderVue from "./components/FriendHeader.vue";
   grid-template-columns: 1fr 5fr 1.25fr;
   grid-template-rows: 1fr;
 }
+
+/**
+grid-area: row-start / column-start / row-length / column-length
+*/
+
 .left-grid { 
   grid-area: 1 / 1 / 5 / 2; 
   display: flex;

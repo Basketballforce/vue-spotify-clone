@@ -45,7 +45,6 @@ import LeftMenuPlaylistVue from './LeftMenuPlaylist.vue';
     padding-left: 1rem;
     padding-top: .5rem;
     background-color: black;
-    height: auto;
     display: grid;
     width: inherit;
 }
