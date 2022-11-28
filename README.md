@@ -33,3 +33,4 @@ npm run build
 ```sh
 npm run lint
 ```
+dont use this to format, use prettier instead. Es lint formatter is TERRIBLE

@@ -65,16 +65,15 @@ import FriendHeaderVue from "./components/FriendHeader.vue";
 
     </div>
 
-    <div class="right-grid">
+    <div class="right-grid" id="friend-grid">
       <FriendHeaderVue/>
       <FriendActiveVue profilepic="overcome.jpg" username="Bear Grylls" song="Survive" album="Overcome" artist="BearG"/>
       <FriendActiveVue profilepic="overcome.jpg" username="Bear Grylls" song="Survive" album="Overcome" artist="BearG"/>
       <FriendActiveVue profilepic="overcome.jpg" username="Bear Grylls" song="Survive" album="Overcome" artist="BearG"/>
 
     </div>
-
+    <div class="player">f</div>
   </div>
-  <div class="player">f</div>
 </template>
 
 <style scoped>
@@ -85,24 +84,36 @@ import FriendHeaderVue from "./components/FriendHeader.vue";
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 5fr 1.25fr;
   width: 100%;
   height: 100%;
+  grid-template-columns: 1fr 5fr 1.25fr;
+  grid-template-rows: 1fr;
+}
+.left-grid { 
+  grid-area: 1 / 1 / 5 / 2; 
+  display: flex;
+}
+.mid-grid {
+   grid-area: 1 / 2 / 5 / 5; 
+}
+.right-grid {
+   grid-area: 1 / 5 / 5 / 6; 
+}
+.player {
+   grid-area: 5 / 1 / 6 / 6; 
 }
 
 .left-grid,.mid-grid,.right-grid {
-  display: inline-grid;
-  background-color: red;
+  background-color: black;
   grid-auto-rows: min-content;
   width: 100%;
-  height: 90vh !important;
+  max-height: 90vh;
 }
 
 .mid-grid {
   background: rgb(4,9,61);
   background: linear-gradient(180deg, rgba(4,9,61,1) 8%, rgb(2, 2, 29) 27%, rgb(16, 16, 16) 59%);
   overflow-y: scroll;
-  max-height: 100%;
 }
 
 .right-grid {
@@ -125,10 +136,6 @@ import FriendHeaderVue from "./components/FriendHeader.vue";
 
 .player{
   border-top: solid 2px rgb(48, 48, 48);
-  height: 10%;
-  position: fixed;
-  width: 100%;
-  top: 90%;
   background: #1a1a1a4a;
 }
 

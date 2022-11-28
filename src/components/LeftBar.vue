@@ -1,5 +1,4 @@
-<script setup>
-import LeftMenuItemVue from './LeftMenuItem.vue';
+<script setup>import LeftMenuItemVue from './LeftMenuItem.vue';
 import LeftMenuPlaylistVue from './LeftMenuPlaylist.vue';
 </script>
 
@@ -46,6 +45,9 @@ import LeftMenuPlaylistVue from './LeftMenuPlaylist.vue';
     padding-left: 1rem;
     padding-top: .5rem;
     background-color: black;
+    height: auto;
+    display: grid;
+    width: inherit;
 }
 .dot-menu{
     width: 40px;
@@ -63,7 +65,6 @@ import LeftMenuPlaylistVue from './LeftMenuPlaylist.vue';
 
 .playlist{
     overflow-y: auto;
-    height: 29rem;
 }
 
 .playlist::-webkit-scrollbar {
